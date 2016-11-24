@@ -1,0 +1,295 @@
+/*body{
+	margin: 0px;
+	background-color: #e6e6ff;
+}*/
+body{
+	font-size: 20px;
+}
+a{
+	color: black;
+	 text-decoration:none; 
+}
+a:hover{
+	color: black;
+	 text-decoration:none; 
+}
+a:visited{
+	color: black;
+	 text-decoration:none; 
+}
+
+/* 
+-------------------------------------------------------Vista admin----------------------------------------------------------
+*/
+
+.vistaAdmin{
+
+}
+#vistaAdmin-registro{
+	border: 2px solid lightgrey;
+	
+	margin: 10px auto;
+	padding: 5px;
+	border-radius: 10px;
+}
+#vistaAdmin-tabla{
+	width: 100%;
+	margin:5px;
+	padding: 1px
+}
+#vistaAdmin-registro label{
+	position: relative;
+
+}
+
+@media screen and (max-width:760px){
+#vistaAdmin-registro{
+	margin: 0;
+	padding: 5px;
+	/*width: 70%;*/
+}
+
+}
+/* 
+-------------------------------------------------------Vista login----------------------------------------------------------
+*/
+.login #cuadroFormulario{
+	left: 40%;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 20px;
+	opacity: 0.7;
+	background-color:  #e6e6ff;
+
+}
+.labelform{
+	width: 30%;
+	float: left;
+}
+.login {
+background-image: url("../images/airsoftBG.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.login #login-registro{
+
+}
+.login ul{
+	 list-style-type: none;
+	 padding: 10px;
+	 position: relative;
+	 left: 7%;
+}
+.login li{
+	float: left;
+}
+.login h1{
+	left: 42%;
+	position: relative;
+	color:  #e6e6ff;
+}
+/* 
+-------------------------------------------------------Vista Registro----------------------------------------------------------
+*/
+.registro div{
+	left: 40%;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px
+}
+.registro #submit{
+	left: 35%;
+	position: relative;
+	margin: 10px;
+}
+
+/* 
+-------------------------------------------------------Vista cliente----------------------------------------------------------
+*/
+.vistaCliente{
+	margin: 0;
+	background-color: #FFFCD8;
+}
+#vistaCliente-nav{
+    margin: 0;
+    z-index: 2;
+    padding: 0;
+    overflow: hidden;
+    background-color: #808F83;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 50px;
+    border-radius: 5px;
+
+}
+#vistaCliente-cuerpo{
+	padding-top: 50px;
+}
+#nav-cerrarSesion{
+	width: 30px;
+	height: 30px;
+	float: right;
+
+}
+
+#vistaCliente-tabla{
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin-top: 20px;
+}
+
+#vistaCliente-titulo{
+	font-weight: bold;
+	font-size: 45px;
+	text-shadow: 1px 1px 0px rgb(230,230,230),
+	2px 2px 0px rgb(151, 104, 4  ),
+	3px 3px 0px rgb(151, 104, 4  ),
+	4px 4px 0px rgb(151, 104, 4  );
+	position: relative;
+	left: 37vw;
+}
+#vistaCliente-contenedor-lista{
+	display: inline-block;
+	overflow: hidden;
+}
+#vistaCliente-lista{
+	list-style-type: none;
+	padding: 2px;
+}
+#vistaCliente-lista li{
+	padding: 5px;
+	border:1px solid black;
+	border-radius: 20px;
+}
+#vistaCliente-lista li:hover{
+	background-color: black;
+	color: white;
+}
+#vistaCliente-contenedor-tabla{
+	left:30vw;
+	position: relative;
+	display: inline-block;
+
+}
+#vistaCliente-inscribirse{
+	left:30%;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+}
+.iconos{
+	background-image: url(../images/sprite.png);
+}
+#icono-salida {
+	width: 100%;
+	height: 100%;
+	background-position: -50px 0px;
+	}
+#icono-soldado{
+	width: 20px;
+	height: 30px;
+	background-position: -30px 0px;
+	}
+#icono-rifle{
+	width: 30px;
+	height: 30px;
+	background-position: 0px 0px;
+	}
+
+	@keyframes carrusel{
+	0% {left: 0px;}
+	25%{left: -100%;}
+	50% {left:-200%;}
+	75%{left: -100%;}
+	100% {left: 0px;}
+}
+#vistaCliente-carrusel-contenedor{
+	width: 100%;
+	height: auto;
+	margin:0px auto;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #FFFCD8;
+}
+#vistaCliente-carrusel{
+	max-width: 100%;
+	padding: 0px;
+	margin: 0px auto;
+	height: auto;
+	list-style-type: none;
+	display: block;
+	white-space: nowrap;
+	position: relative;
+	animation-name:carrusel;
+	animation-duration:30s;
+	animation-iteration-count:infinite;
+
+}	
+#vistaCliente-carrusel:hover{
+	animation-play-state: paused;
+}	
+.vistaCliente-carrusel-elemento{
+	display: inline-block;
+	margin: 0px auto;
+	padding: 0px;
+	
+	width: 100%
+}
+.vistaCliente-carrusel-elemento-img{
+	width: 100%;
+	margin:0px auto;
+	padding: 0px;
+}
+
+/* 
+-------------------------------------------------------Modificar----------------------------------------------------------
+*/
+#modificar-lista{
+	list-style-type: none;
+	display: flex;
+}
+#modificar-lista li{
+	padding: 10px;
+}
+#modificar-form{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+
+/* 
+-------------------------------------------------------responsive----------------------------------------------------------
+*/
+@media screen and (max-width:760px){
+	.vistaCLiente{
+		background-color: lightgrey;
+	}
+	#vistaCliente-lista li{
+	float: left;
+	font-size: 12px;
+	background-color: #808F83;
+	}
+	#vistaCliente-lista{
+	width: 100%;
+	}
+	#vistaCliente-contenedor-lista{
+    display: flex;   
+    -webkit-flex-wrap: nowrap;
+	 -ms-flex-wrap: nowrap;
+	 flex-wrap: nowrap;
+	 left: 10px;
+	}
+	#vistaCliente-titulo{
+		left: 0px;
+	}
+	#vistaCliente-carrusel-contenedor{					/*entremedios del carrusel*/
+		background-color: lightgrey;
+		}
+
+
+}

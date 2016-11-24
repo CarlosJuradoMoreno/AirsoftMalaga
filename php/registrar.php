@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Registro de usuario</title>
-	<link rel="stylesheet" type="text/css" href="../css/css4.css">
+	<link rel="stylesheet" type="text/css" href="../css/css14.css">
 </head>
 <body class="registro">
 <div >

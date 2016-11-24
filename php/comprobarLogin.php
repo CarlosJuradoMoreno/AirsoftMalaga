@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	try {
-		$conexion = new PDO("mysql:host=localhost:3306;dbname=airsoft", "id191248_admin", "admin");
+		$conexion = new PDO("mysql:host=localhost;dbname=airsoft", "admin", "admin");
 		echo "Se ha establecido una conexión con el servidor de bases de datos.";
 	} catch (PDOException $e) {
 		echo "No se ha podido establecer conexión con el servidor de bases de datos.<br>";

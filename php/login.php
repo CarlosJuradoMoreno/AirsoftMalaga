@@ -8,8 +8,9 @@
 ?>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AirsoftMalaga</title>
-	<link rel="stylesheet" type="text/css" href="../css/css4.css">
+	<link rel="stylesheet" type="text/css" href="../css/css15.css">
 </head>
 <body class="login">
 	<h1>AirsoftMalaga</h1>
